@@ -8,11 +8,11 @@ element.innerHTML = 'This is the new modified text';
 // move image
 var img = document.getElementById('madi');
 
-var marginLft = 0;
+var marginLeft = 0;
 
 function moveRight(){
-    marginLft = marginLft + 10 ;
-    img.style.marginLeft = marginLft + 'px';
+    marginLeft = marginLeft + 10 ;
+    img.style.marginLeft = marginLeft + 'px';
 }
 img.onclick = function(){
    var interval = setinterval(moveRight,100);
