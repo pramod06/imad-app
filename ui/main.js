@@ -3,7 +3,7 @@ var button = document.getElementById('countbtn');
 
 var counter = 0;
 
-button.onclick = function(){
+button.onclick = function() {
     //Render  
     counter = counter + 1;
     
