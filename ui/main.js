@@ -9,4 +9,4 @@ element.innerHTML = 'This is the new modified text';
 var img = document.getElementById('madi');
 img.onClick = function(){
     img.style.marginLeft = '100px';
-}
+};
