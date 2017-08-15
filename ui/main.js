@@ -7,6 +7,13 @@ element.innerHTML = 'This is the new modified text';
 
 // move image
 var img = document.getElementById('madi');
+
+var marginLft = 0;
+
+function moveRight(){
+    marginLft = marginLft + 10 ;
+    img.style.marginLeft = marginLft + 'px';
+}
 img.onclick = function(){
-    img.style.marginLeft = '100px';
+   var interval = setinterval(moveright,100);
 };
