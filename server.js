@@ -12,12 +12,21 @@ app.get('/', function (req, res) {
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
+
+var counter = 0;
+app.get('/counter', function(req,res) {
+    counter = counter +1;
+    res.send(counter,toString());
+});
+
 app.get('/article_one', function (req, res) {
    res.sendFile(path.join(__dirname, 'ui', 'article_one.html'));   
 });
+
 app.get('/article_two', function (req, res) {
   res.send('this is article two');    
 });
+
 app.get('/article_three', function (req, res) {
   res.send('this is article three');    
 });
